@@ -1,5 +1,7 @@
 #function to calculate tax
 
+import os
+
 vatRate = 12.5
 
 #function declaration
@@ -9,6 +11,22 @@ def calculateTax(amount):
     return totalAmount
 
 
-userInput = int(input('Please amount: '))
-bill = calculateTax(userInput)
-print("Total amount to be paid is: " , bill)
+def readFile():
+    #print("This is the beginning of the file handling process")
+    file1 = open("file1.txt", "r")
+    print(file1.read())
+    file1.close()
+
+
+def writeFile(totalAmount):
+    try:
+        file2 =open("file2.txt", "w")
+        file2.write("Total amount for this customer is " + str(totalAmount) )
+        file2.close()
+    except file2.exception:
+        print("There is an error with the file")
+
+
+def currentWorkingDirectory():
+    cwd = os.getlogin()
+    print(cwd)
