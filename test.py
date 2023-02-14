@@ -2,7 +2,7 @@ from functions import calculateTax, readFile, writeFile, currentWorkingDirectory
 import math
 
 
-
+#@TODO: Refactor code to also accept user name.
 
 userInput = int(input('Please amount: '))
 bill = calculateTax(userInput)
