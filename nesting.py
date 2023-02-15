@@ -31,6 +31,7 @@ def nesting():
     
     if userInput == "Rahab":
         print("Welcome to class ", userInput)
+        #@TODO: First determine is the languague enetered by the user is in our collection. If it is assign an instructor, if it is not but is offered assign another instructor. If it is not offered print out a message.
         for language in languages:
              if userInputClass == language:
                 print("Your instructor is Joseph")
