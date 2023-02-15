@@ -1,3 +1,3 @@
-Thank you ??username for your patronage. Please come again another time.
+Please come again another time.
 
 @TODO: Put in the username in the thank you message.
