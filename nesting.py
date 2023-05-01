@@ -22,27 +22,37 @@
 #spanish english japanese
 def nesting():
     confirm = ""
-    languages = ["English", "Japanese", "Spanish"] ## english, spanish, japanse, german, manadrin
     while confirm != "Y":
-        startV = str(input("Do you want to start the application"))
+        startV = str(input("Do you want to start the application(Y/N): ").upper())
         confirm = startV
-    userInput = str(input("Please enter your name: "))
-    userInputClass = str(input("Please language "))
-    
-    if userInput == "Rahab":
-        print("Welcome to class ", userInput)
-        #@TODO: First determine is the languague enetered by the user is in our collection. If it is assign an instructor, if it is not but is offered assign another instructor. If it is not offered print out a message.
-        for language in languages:
-             if userInputClass == language:
-                print("Your instructor is Joseph")
-             
-             else:
-                print("Sorry the language you entered is uanavailabe at the moment")
-           
     else:
-        print("This is not your class ", userInput)
+        userInput = str(input("Please enter your name: "))
+        users = ["Rahab", "Kwasi", "Elizabeth", "Kwame", "Prince"]  
+        i = 0
+        while i < len(users):
+            userName = users[i]
+        i = i + 1  
+        if userName == userInput:
+            print("Welcome to class ", userInput)
+        else:
+            print("This is not your class,", userInput)
+             
+#@TODO: First determine is the languague enetered by the user is in our collection. If it is assign an instructor, if it is not but is offered assign another instructor. If it is not offered print out a message.
+         #   languages = ["English", "Japanese", "Spanish"] ## english, spanish, japanse, german, mandarin
+          #  languages1 = ["German", "Mandarin"]
+           # allLang = languages + languages1
+            #for language in languages:
+             #   userInputClass = str(input("Please enter language: "))
+              #  if userInputClass == language:
+               #     print("Your instructor is Joseph")
+                    
+                #elif userInputClass == languages1:
+                 #   print("Your instructor is Ajara")
+                        
+                #else:
+                 #   print("Sorry the language you entered is uanavailabe at the moment")
+           
+        
 
 
 nesting()
-
-# 

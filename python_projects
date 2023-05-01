@@ -1,0 +1,21 @@
+height = 10  # the height of the tree
+width = height * 2 - 1  # the width of the tree
+
+# loop through each row of the tree
+for row in range(height):
+    # calculate the number of stars for this row
+    stars = row * 2 + 1
+    # calculate the left margin for this row
+    left_margin = (width - stars) // 2
+    # print the left margin
+    print(" " * left_margin, end="")
+    # print the stars for this row
+    print("*" * stars)
+
+# print the tree trunk
+trunk_width = height // 3
+trunk_height = height // 2
+trunk_left_margin = (width - trunk_width) // 2
+for row in range(trunk_height):
+    print(" " * trunk_left_margin, end="")
+    print("*" * trunk_width)
