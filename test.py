@@ -6,6 +6,7 @@ import math
 
 inputName = str(input('Please enter your name: '))
 userInput = int(input('Please amount: '))
+
 bill = calculateTax(userInput)
 print("Total amount to be paid is: " , bill)
 print("This is the floored bill " , math.floor(bill))
